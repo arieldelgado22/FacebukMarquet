@@ -59,18 +59,21 @@ https://nodejs.org/
 
 ---
 
-## 🚀 Instalación
+##  Instalación
+
+### 1. Clonar el repositorio
+
 
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/arieldelgado22/facebookmarquet.git
+git clone https://github.com/arieldelgado22/FacebukMarquet.git
 ```
 
 ### 2. Ingresar al proyecto
 
 ```bash
-cd facebookmarquet
+cd FacebukMarquet
 ```
 
 ### 3. Instalar dependencias
@@ -78,6 +81,7 @@ cd facebookmarquet
 ```bash
 npm install
 ```
+
 
 ---
 
