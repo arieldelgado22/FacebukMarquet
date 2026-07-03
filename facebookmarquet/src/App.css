@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    padding: 24px 16px 48px;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.marketplace-shell {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+}
+
+.marketplace-hero {
+    background: linear-gradient(135deg, #ffffff 0%, #f7f8fa 100%);
+    border: 1px solid #e4e6eb;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    padding: 28px;
+}
+
+.marketplace-panel {
+    background: #ffffff;
+    border: 1px solid #e4e6eb;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.marketplace-card {
+    background: #ffffff;
+    border: 1px solid #e4e6eb;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.marketplace-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.fb-blue {
+    color: #1877f2;
+}
+
+.btn-fb {
+    --bs-btn-bg: #1877f2;
+    --bs-btn-border-color: #1877f2;
+    --bs-btn-hover-bg: #166fe5;
+    --bs-btn-hover-border-color: #166fe5;
+    --bs-btn-active-bg: #1464d2;
+    --bs-btn-active-border-color: #1464d2;
+    --bs-btn-color: #fff;
+    font-weight: 700;
+}
+
+.btn-fb-soft {
+    background: #e7f3ff;
+    border-color: #e7f3ff;
+    color: #1877f2;
+    font-weight: 700;
+}
+
+.btn-fb-soft:hover {
+    background: #dbeaff;
+    color: #166fe5;
+}
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    border-color: #ccd0d5;
+    padding: 0.75rem 0.9rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 0.2rem rgba(24, 119, 242, 0.15);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 16px 12px 36px;
+    }
+
+    .marketplace-hero {
+        padding: 20px;
+    }
+}

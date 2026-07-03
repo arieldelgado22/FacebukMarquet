@@ -1,0 +1,23 @@
+[
+  {
+ "id": 1,
+ "nombre": "Camara Instantánea",
+ "precio": 85000,
+ "stock":22,
+ "imagen": "/images/CamaraInstantanea.png"
+ },
+ {
+ "id": 2,
+ "nombre": "Camara Nikon",
+ "precio": 97500,
+ "stock":2,
+ "imagen": "/images/CamaraNikon.webp"
+ },
+ {
+ "id": 3,
+ "nombre": "Monitor Curvo",
+ "precio": 110000,
+ "stock":2,
+ "imagen": "/images/MonitorCurvo.jpg"
+ }
+]

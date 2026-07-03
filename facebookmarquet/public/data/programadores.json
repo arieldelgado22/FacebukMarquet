@@ -1,0 +1,23 @@
+[
+  {
+ "id": 1,
+ "nombre": "Ariel Delgado",
+ "informacion": "Product Owner",
+ "edad":22,
+ "imagen": "/images/1.jpg"
+ },
+ {
+ "id": 2,
+ "nombre": "Juan Avila",
+ "informacion": "Back End Developer",
+ "edad": 25,
+ "imagen": "/images/2.jpg"
+ },
+ {
+ "id": 3,
+ "nombre": "Ramita",
+ "informacion": "Front End Developer",
+ "edad": 22,
+ "imagen": "/images/3.jpg"
+ }
+]

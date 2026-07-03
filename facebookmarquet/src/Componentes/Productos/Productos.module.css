@@ -1,0 +1,64 @@
+.container {
+    padding: 0;
+}
+
+.title {
+    color: #1c1e21;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.imageWrapper {
+    align-items: center;
+    background-color: #f7f8fa;
+    display: flex;
+    height: 210px;
+    justify-content: center;
+    padding: 18px;
+}
+
+.image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.info {
+    padding: 18px;
+}
+
+.info h3 {
+    color: #1c1e21;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.price {
+    color: #050505;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.loading,
+.error {
+    color: #65676b;
+    font-size: 1.2rem;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
