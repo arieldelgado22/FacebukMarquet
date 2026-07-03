@@ -30,7 +30,7 @@ Facebook Marquet es una aplicación web desarrollada con React  y Firebase, insp
 ## 📂 Estructura del proyecto
 
 ```
-facebookmarquet
+FacebukMarquet
 │
 ├── public/
 ├── src/
