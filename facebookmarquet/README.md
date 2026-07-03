@@ -1,16 +1,178 @@
-# React + Vite
+#  Facebook Marquet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Facebook Marquet es una aplicación web desarrollada con React  y Firebase, inspirada en Facebook Marketplace, que permite visualizar, administrar y gestionar productos almacenados en Cloud Firestore.
 
-Currently, two official plugins are available:
+##  Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Visualización de productos almacenados en Firebase Firestore.
+- Detalle de cada producto.
+- Carrito de compras.
+- Administración de productos mediante formulario.
+- Navegación mediante React Router.
+- Interfaz responsive.
+- Integración con Firebase.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- Firebase
+- Cloud Firestore
+- React Router DOM
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Estructura del proyecto
+
+```
+facebookmarquet
+│
+├── public/
+├── src/
+│   ├── Componentes/
+│   ├── context/
+│   ├── firebase/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+└── README.md
+```
+
+---
+
+##  Requisitos
+
+Antes de ejecutar el proyecto es necesario tener instalado:
+
+- Node.js 18 o superior
+- npm
+
+Puede descargarse desde:
+
+https://nodejs.org/
+
+---
+
+## 🚀 Instalación
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/arieldelgado22/facebookmarquet.git
+```
+
+### 2. Ingresar al proyecto
+
+```bash
+cd facebookmarquet
+```
+
+### 3. Instalar dependencias
+
+```bash
+npm install
+```
+
+---
+
+##  Ejecutar el proyecto
+
+Iniciar el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+Vite mostrará una dirección similar a:
+
+```
+http://localhost:5173
+```
+
+Abrir esa dirección en el navegador.
+
+---
+
+## Configuración de Firebase
+
+El proyecto utiliza Firebase para:
+
+- Authentication
+- Cloud Firestore
+
+La configuración se encuentra en:
+
+```
+src/config.js
+```
+
+Es necesario crear un proyecto en Firebase e incorporar las credenciales correspondientes.
+
+---
+
+##  Base de datos
+
+La aplicación utiliza Cloud Firestore.
+
+Colección principal:
+
+```
+productos nacionales
+```
+
+Cada documento contiene información similar a:
+
+```json
+{
+  "id": 1,
+  "nombre": "Producto",
+  "precio": 25000,
+  "stock": 10,
+  "imagen": "URL de la imagen"
+}
+```
+
+---
+
+##  Funcionalidades
+
+- Listado de productos.
+- Vista detallada de productos.
+- Carrito de compras.
+- Gestión de productos.
+- Navegación entre páginas.
+- Integración con Firebase.
+
+---
+
+##  Scripts disponibles
+
+Instalar dependencias
+
+```bash
+npm install
+```
+
+Ejecutar en modo desarrollo
+
+```bash
+npm run dev
+```
+
+Compilar para producción
+
+```bash
+npm run build
+```
+
+Vista previa de producción
+
+```bash
+npm run preview
+```
