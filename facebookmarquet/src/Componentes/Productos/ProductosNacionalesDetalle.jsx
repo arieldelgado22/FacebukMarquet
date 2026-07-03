@@ -59,11 +59,28 @@ const ProductosNacionalesDetalle = () => {
   };
 
   if (loading) {
-    return <p className="text-center text-secondary py-5">Cargando producto...</p>;
+    return (
+      <section className="marketplace-shell">
+        <div className="text-center py-5">
+          <div className="spinner-border text-primary mb-3" role="status" style={{ width: '2.5rem', height: '2.5rem' }}>
+            <span className="visually-hidden">Cargando producto...</span>
+          </div>
+          <p className="text-secondary mb-0">Cargando producto...</p>
+        </div>
+      </section>
+    );
   }
 
   if (!prod) {
-    return <p className="text-center text-secondary py-5">Producto no encontrado.</p>;
+    return (
+      <section className="marketplace-shell">
+        <div className="alert alert-warning text-center py-4 my-4" role="alert">
+          <p className="fw-bold mb-1">Producto no encontrado</p>
+          <p className="mb-0">El producto que buscas no existe o fue eliminado.</p>
+          <Link className="btn btn-fb-soft mt-3" to="/productos-nacionales">Volver a productos</Link>
+        </div>
+      </section>
+    );
   }
 
   return (

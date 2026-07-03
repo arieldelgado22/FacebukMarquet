@@ -51,8 +51,20 @@ export function ItemListContainer({ Mensaje }) {
         </Link>
       </div>
 
-      {loading && <p className="text-center text-secondary py-5">Cargando destacados...</p>}
-      {error && <p className="text-center text-danger py-5">{error}</p>}
+      {loading && (
+        <div className="text-center py-5">
+          <div className="spinner-border text-primary mb-3" role="status" style={{ width: '2.5rem', height: '2.5rem' }}>
+            <span className="visually-hidden">Cargando destacados...</span>
+          </div>
+          <p className="text-secondary mb-0">Cargando destacados...</p>
+        </div>
+      )}
+      {error && (
+        <div className="alert alert-danger text-center py-4" role="alert">
+          <p className="fw-bold mb-1">Error al cargar destacados</p>
+          <p className="mb-0">{error}</p>
+        </div>
+      )}
       {!loading && !error && <ItemList productos={productos} />}
     </section>
   );

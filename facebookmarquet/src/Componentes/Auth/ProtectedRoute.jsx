@@ -6,7 +6,16 @@ function ProtectedRoute({ children, requireAdmin = false }) {
   const location = useLocation();
 
   if (loading) {
-    return <p style={{ padding: '2rem', textAlign: 'center' }}>Validando sesion...</p>;
+    return (
+      <section className="marketplace-shell">
+        <div className="text-center py-5">
+          <div className="spinner-border text-primary mb-3" role="status" style={{ width: '2.5rem', height: '2.5rem' }}>
+            <span className="visually-hidden">Validando sesion...</span>
+          </div>
+          <p className="text-secondary mb-0">Validando sesion...</p>
+        </div>
+      </section>
+    );
   }
 
   if (!isAuthenticated) {

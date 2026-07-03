@@ -17,8 +17,29 @@ const ProductosNacionales = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <p className="text-center text-secondary py-5">Cargando productos nacionales...</p>;
-  if (error) return <p className="text-center text-danger py-5">{error}</p>;
+  if (loading) {
+    return (
+      <section className="marketplace-shell">
+        <div className="text-center py-5">
+          <div className="spinner-border text-primary mb-3" role="status" style={{ width: '2.5rem', height: '2.5rem' }}>
+            <span className="visually-hidden">Cargando productos nacionales...</span>
+          </div>
+          <p className="text-secondary mb-0">Cargando productos nacionales...</p>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className="marketplace-shell">
+        <div className="alert alert-danger text-center py-4 my-4" role="alert">
+          <p className="fw-bold mb-1">Error al cargar productos</p>
+          <p className="mb-0">{error}</p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="marketplace-shell">
