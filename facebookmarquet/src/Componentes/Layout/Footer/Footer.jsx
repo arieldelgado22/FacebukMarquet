@@ -28,7 +28,7 @@ function Footer() {
                   <div className="dev-info">
                     <h4>{persona.nombre}</h4>
                     <p>{persona.informacion}</p>
-                    <span>{persona.edad} anos</span>
+                    <span>{persona.edad} años</span>
                   </div>
                 </div>
               ))}
